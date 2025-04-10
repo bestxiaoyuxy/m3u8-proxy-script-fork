@@ -38,7 +38,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "fm3u8"
-          entrypoint: "deno-chache.ts"
+          entrypoint: "deno-cache.ts"
           root: ""
           
           
