@@ -32,13 +32,13 @@ jobs:
         run: "deno install -gArf jsr:@deno/deployctl"
 
       - name: Build step
-        run: "deployctl deploy --project=fproxy --prod deno.ts"
+        run: "deployctl deploy --project=fm3u8 --prod deno-cache.ts"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "fproxy"
-          entrypoint: "deno.ts"
+          project: "fm3u8"
+          entrypoint: "deno-chache.ts"
           root: ""
           
           
