@@ -26,7 +26,7 @@ const CONFIG = {
   // 如果环境变量未设置，默认 false；否则解析 "true"/"false"
   PROXY_TS_URLENCODE: Deno.env.get("PROXY_TS_URLENCODE")?.toLowerCase() === "true" || false,
   
-  CACHE_TTL: 86400,                              // Cache TTL in seconds (24 hours)
+  CACHE_TTL: 14400,                              // Cache TTL in seconds (24 hours)
   CACHE_NAME: 'm3u8-proxy-cache',                // Cache storage name
   
   MAX_RECURSION: 50,                             // Max recursion for nested playlists
