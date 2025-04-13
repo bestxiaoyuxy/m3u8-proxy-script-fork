@@ -27,7 +27,7 @@ const CONFIG = {
   PROXY_TS_URLENCODE: Deno.env.get("PROXY_TS_URLENCODE")?.toLowerCase() === "true" || false,
   
   CACHE_TTL: 14400,                              // Cache TTL in seconds (24 hours)
-  CACHE_NAME: 'm3u8-proxy-cache',                // Cache storage name
+  CACHE_NAME: 'm3u8-proxy-hc',                // Cache storage name
   
   MAX_RECURSION: 50,                             // Max recursion for nested playlists
   FILTER_DISCONTINUITY: true,                    // Whether to filter discontinuity markers
